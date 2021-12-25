@@ -1,0 +1,163 @@
+@import "../../global.scss";
+
+.project {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  h1 {
+    color: black;
+    font-size: 50px;
+    font-weight: 700;
+    position: absolute;
+    top: 10px;
+  }
+
+  .arrow {
+    height: 80px;
+    width: 100px;
+    color: crimson;
+    position: absolute;
+    cursor: pointer;
+    margin-top: 40px;
+
+    @include mobile {
+      display: none;
+    }
+
+    &.left {
+      left: 100px;
+
+      &:hover{
+          transform: scale(1.1);
+      }
+    }
+
+    &.right {
+      right: 100px;
+      transform: rotateY(180deg);
+
+      &:hover{
+        transform: rotateY(180deg) scale(1.1);
+    }
+    }
+  }
+
+  .slider {
+    height: 450px;
+    display: flex;
+    left: 0;
+    bottom: 40px;
+    position: absolute;
+    transition: all 2s ease;
+
+    @include mobile {
+      height: 100vh;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .container {
+      width: 100vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .item {
+        width: 800px;
+        height: 100%;
+        background-color: $lightBlack;
+        border-radius: 0px 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @include mobile {
+          width: 80%;
+          height: 150px;
+          margin: 5px 0;
+        }
+
+        .left {
+          flex: 4;
+          height: 80%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          .leftContainer {
+            width: 90%;
+            height: 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            margin-left: 10px;
+
+            @include mobile {
+              width: 100%;
+              height: 100%;
+            }
+
+            h2 {
+              font-size: 30px;
+              color: white;
+
+              @include mobile {
+                font-size: 13px;
+              }
+            }
+            p {
+              font-size: 15px;
+              color: white;
+
+              @include mobile {
+                font-size: 9px;
+              }
+            }
+
+            a {
+              color: white;
+              text-decoration: none;
+              background-color: crimson;
+              padding: 12px 8px;
+              border-radius: 5px;
+              font-size: 20px;
+              text-align: center;
+              font-weight: 700;
+              width: 50%;
+              transition: all 0.5s ease;
+
+              &:hover {
+                background-color: lightgreen;
+                color: black;
+              }
+            }
+          }
+        }
+        .right {
+          flex: 8;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          overflow: hidden;
+
+          img {
+            width: 440px;
+            border-radius: 20px;
+            transform: rotate(-10deg);
+            cursor: pointer;
+            transition: all 1s ease;
+
+            &:hover {
+              transform: rotate(0deg);
+              box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+              height: 95%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

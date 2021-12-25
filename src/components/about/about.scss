@@ -1,0 +1,111 @@
+@import '../../global.scss';
+
+.about{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .left{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        padding-left: 50px;
+        
+        
+        h1{
+            font-size: 50px;
+            font-weight: 700;
+            padding: 10px 0;
+        }
+
+        h2{
+            font-size: 30px;
+            font-weight: 700;
+            padding: 10px 0;
+
+            span{
+                color: crimson;
+            }
+        }
+
+        h3{
+            padding: 10px 0;
+        }
+
+        a{
+            color:white;
+            text-decoration:none;
+            background-color: crimson;
+            padding: 15px 10px;
+            margin-bottom: 10px;
+            border-radius:5px;
+            font-size: 20px;
+            text-align: center;
+            font-weight: 700;
+            width: 25%;
+            margin-top: 10px;
+            transition: all 0.5s ease;
+            
+            &:hover {
+                background-color: $lightBlack;
+                color: white;
+            }
+        }
+    }
+
+    .right{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        margin-top: -20px;
+        padding-left: 50px;
+        
+
+        .wrapper{
+                width: 490px;
+                height: 490px;
+                background-color: rgb(248, 47, 88);
+                border-radius: 30% 15%;
+                overflow: hidden;
+                
+                
+            .imgContainer{
+                width: 490px;
+                height: 490px;
+                background-color: crimson;
+                border-radius: 20% 35%;
+                overflow: hidden;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                transition: all 1s ease;
+                
+
+                &:hover{
+                    transform: scale(1.05) rotate(5deg);
+                }
+
+                img{
+                    margin-left: 30px;
+                    margin-top: 10px;
+                }
+            }
+        }
+
+        .socialIcon{
+            display: flex;
+            flex-direction: row;
+            
+            
+            .icon{
+                margin: 15px 0 10px 20px;
+                transition: all 1s ease;
+
+                &:hover{
+                    transform: scale(1.1) rotate(-15deg);
+                }
+            }
+        }
+    }
+}

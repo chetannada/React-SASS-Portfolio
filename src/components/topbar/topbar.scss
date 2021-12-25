@@ -40,6 +40,11 @@
                 .icon{
                     font-size: 18px;
                     margin-right: 5px;
+                    cursor: pointer;
+
+                    &:hover{
+                        color: crimson;
+                    }
                 }
                 span{
                     font-size: 15px;
