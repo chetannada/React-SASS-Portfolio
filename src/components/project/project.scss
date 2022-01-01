@@ -15,8 +15,8 @@
   }
 
   .arrow {
-    height: 80px;
-    width: 100px;
+    height: 60px;
+    width: 80px;
     color: crimson;
     position: absolute;
     cursor: pointer;
@@ -29,8 +29,8 @@
     &.left {
       left: 100px;
 
-      &:hover{
-          transform: scale(1.1);
+      &:hover {
+        transform: scale(1.1);
       }
     }
 
@@ -38,9 +38,9 @@
       right: 100px;
       transform: rotateY(180deg);
 
-      &:hover{
+      &:hover {
         transform: rotateY(180deg) scale(1.1);
-    }
+      }
     }
   }
 
@@ -120,17 +120,18 @@
               color: white;
               text-decoration: none;
               background-color: crimson;
-              padding: 12px 8px;
+              padding: 7px 12px;
               border-radius: 5px;
               font-size: 20px;
               text-align: center;
               font-weight: 700;
-              width: 50%;
+              width: 60%;
+              border: 2px solid crimson;
               transition: all 0.5s ease;
 
               &:hover {
-                background-color: lightgreen;
-                color: black;
+                background-color: transparent;
+                color: white;
               }
             }
           }

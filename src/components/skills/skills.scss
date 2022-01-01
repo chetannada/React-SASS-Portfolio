@@ -1,6 +1,85 @@
-@import '../../global.scss';
+@import "../../global.scss";
 
-.skills{
-    background-color: violet;
-    
+.skills {
+  background-color: $lightBlackBg;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: white;
+
+  h1 {
+    font-size: 50px;
+    font-weight: 700;
+    position: absolute;
+    top: 10px;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+    .left {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      padding-left: 50px;
+
+      h2 {
+        font-size: 25px;
+        font-weight: 700;
+        padding: 10px 0;
+      }
+
+      h3 {
+        font-size: 18px;
+        font-weight: 400;
+        padding: 10px 0;
+        margin-bottom: 20px;
+      }
+
+      a {
+        color: white;
+        text-decoration: none;
+        background-color: crimson;
+        padding: 7px 12px;
+        border-radius: 5px;
+        font-size: 25px;
+        text-align: center;
+        font-weight: 700;
+        width: 28%;
+        margin-bottom: 30px;
+        border: 2px solid crimson;
+        transition: all 0.5s ease;
+
+        .read {
+          vertical-align: text-bottom;
+          font-size: 28px;
+          transform: rotate(180deg);
+        }
+
+        &:hover {
+          background-color: transparent;
+          color: white;
+        }
+      }
+    }
+
+    .right {
+      display: flex;
+      flex-wrap: wrap;
+      width: 50%;
+      padding: 0 50px 0 50px;
+
+      font-size: 80px;
+
+      .icon {
+        margin: 0 10px 15px;
+        display: flex;
+        justify-content: space-around;
+      }
+    }
+  }
 }

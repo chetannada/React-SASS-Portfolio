@@ -1,8 +1,10 @@
 @import "../../global.scss";
 
 .intro {
-  background-color: white;
+  background-color: $lightBlackBg;
   display: flex;
+  color: white;
+
 
   @include mobile {
     flex-direction: column;
@@ -104,7 +106,7 @@
 
       .arrowDown {
         width: 80px;
-        height: 80px;
+        height: 60px;
         color: crimson;
         animation: arrowBlink 2s infinite;
         transition: all 1s ease;
