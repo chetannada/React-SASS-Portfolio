@@ -7,7 +7,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 Open your Terminal and then type
 
 ### `git clone {the URL to the GitHub repo}`
-This clones the repo
+This clones the Repository
 
 If react-scripts is present in package.json, then just type this command
 
