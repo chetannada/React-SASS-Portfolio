@@ -4,6 +4,7 @@
   background-color: $lightBlackBg;
   display: flex;
   color: white;
+  
 
 
   @include mobile {
@@ -17,6 +18,7 @@
     .imgContainer {
       width: 700px;
       height: 700px;
+      margin-top: 30px;
       background-color: crimson;
       border-radius: 50%;
       display: flex;
@@ -29,7 +31,7 @@
         align-items: flex-start;
       }
       img {
-        height: 95%;
+        height: 90%;
         margin-left: 40px;
         cursor: pointer;
         transition: all 2s ease;

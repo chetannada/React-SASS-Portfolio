@@ -1,9 +1,9 @@
 import {useState, useEffect} from 'react';
 import {FaArrowCircleUp} from 'react-icons/fa';
-import './scrollTopTop.scss';
+import './scrollToTop.scss';
 
 
-const ScrollTopTop = () =>{
+const ScrollToTop = () =>{
 
   const [showScroll, setShowScroll] = useState(false)
 
@@ -15,9 +15,9 @@ const ScrollTopTop = () =>{
   })
 
   const checkScrollTop = () => {
-    if (!showScroll && window.pageYOffset > 100){
+    if (!showScroll && window.pageYOffset > 200){
       setShowScroll(true)
-    } else if (showScroll && window.pageYOffset <= 100){
+    } else if (showScroll && window.pageYOffset <= 200){
       setShowScroll(false)
     }
   };
@@ -31,4 +31,4 @@ const ScrollTopTop = () =>{
   );
 }
 
-export default ScrollTopTop;
+export default ScrollToTop;

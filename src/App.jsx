@@ -7,6 +7,7 @@ import Skills from "./components/skills/Skills";
 import Project from "./components/project/Project";
 import Contact from "./components/contact/Contact";
 import { useState } from "react";
+import ScrollToTop from "./components/scrollToTop/ScrollToTop";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -21,6 +22,9 @@ function App() {
         <Skills />
         <Project />
         <Contact />
+        <div className="scroll">
+          <ScrollToTop />
+        </div>
       </div>
     </div>
   );

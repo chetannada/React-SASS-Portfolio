@@ -1,13 +1,16 @@
 .app {
-  height: 100vh;
+  // height: 500vh;
+  
 
   .sections {
     width: 100%;
-    height: calc(100vh - 70px);
+    // height: calc(100vh - 70px);
+    height: calc(500vh);
     position: relative;
-    top: 70px;
+    // top: 0px;
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
+    overflow: hidden;
     // scrollbar-width: none; // for firefox
     // &::-webkit-scrollbar{
     //     display: none;
@@ -15,8 +18,12 @@
 
     > * {
       width: 100vw;
-      height: calc(100vh - 70px);
+      // height: calc(100vh - 70px);
+      height: calc(100vh);
       scroll-snap-align: start;
+    }
+    .scroll {
+      height: 0px;
     }
   }
 }

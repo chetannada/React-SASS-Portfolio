@@ -2,13 +2,13 @@
   position: fixed;
   height: 40px;
   width: 40px;
-  bottom: -250px;
+  bottom: 20px;
   right: 30px;
   z-index: 1000;
   cursor: pointer;
   color: crimson;
   transition: all 0.5s ease;
-  background-color: indigo;
+  // background-color: indigo;
   opacity: 0.8;
 
   &:hover {
